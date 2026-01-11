@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
-:root {
+/* default next stuff */
+/* --------------------------------------------- */
+:root
+{
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+@theme inline
+{
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-tektur);
   --font-mono: var(--font-tektur);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+@media (prefers-color-scheme: dark) 
+{
+  :root 
+  {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
@@ -24,17 +30,18 @@ body
   background: var(--background);
   color: var(--foreground);
 }
+/* --------------------------------------------- */
 
-
+/* regular tags */
 /* --------------------------------------------- */
 body 
 {
-  @apply max-w-[75ch] mx-auto py-8;
+  @apply max-w-[75ch] mx-auto py-8 tracking-widest;
 
 }
 h1, h2, p, ul 
 {
-  @apply text-center ;
+  @apply text-center;
 }
 
 ul 
@@ -54,10 +61,17 @@ h2
 
 a
 {
-  @apply text-pink-400
+  @apply text-pink-600
 }
 
 a:active, a:hover
 {
-  @apply text-yellow-100
+  @apply text-yellow-600
 }
+
+iframe
+{
+  @apply mx-auto;
+}
+/* --------------------------------------------- */
+
