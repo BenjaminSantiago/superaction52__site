@@ -50,8 +50,9 @@ export default function HOME()
       </ul>
       
       <h2>VIDEOS/UPDATES</h2>
-      <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4nx-mF4-m6o?si=VdlAHwDOhl3Jw2TG" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <div className = "w-full aspect-video">
+        <iframe className = "w-full h-full rounded-lg"
+        src="https://www.youtube.com/embed/4nx-mF4-m6o?si=VdlAHwDOhl3Jw2TG" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
     </main>
     </>
