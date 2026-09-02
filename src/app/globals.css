@@ -30,6 +30,16 @@ body
   background: var(--background);
   color: var(--foreground);
 }
+
+main
+{
+  align-items: center;
+}
+
+img
+{
+  margin: 0 auto;
+}
 /* --------------------------------------------- */
 
 /* regular tags */
@@ -39,7 +49,7 @@ body
   @apply max-w-[75ch] mx-auto py-8 tracking-widest;
 
 }
-h1, h2, p, ul 
+h1, h2, p, ul, dt, dd
 {
   @apply text-center;
 }

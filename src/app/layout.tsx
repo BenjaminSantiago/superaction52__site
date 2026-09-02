@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import { Tektur } from 'next/font/google'
 import "./globals.css";
 
@@ -7,7 +8,7 @@ const tektur = Tektur({
   display: 'swap',
 })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, }:{children: ReactNode}) {
   return (
     <html lang="en">
       <body

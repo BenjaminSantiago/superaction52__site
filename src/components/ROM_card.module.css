@@ -1,0 +1,30 @@
+article.ROM_card
+{
+    background-color: #333333;
+    margin          : 0 auto;
+    padding         : 20px;
+    width           : 300px;
+    border-radius   : 2%;
+}
+
+/* game title */
+article.ROM_card h2
+{
+    padding: 0;
+}
+
+.ROM_card ul
+{
+    margin: .8rem;
+}
+
+.ROM_card li.genre
+{
+    background     : #FFFFFF;
+    color          : #000000;
+    list-style-type: none;
+    margin         : .4rem .2rem;
+    display        : inline;
+    padding        : .4rem;
+    border-radius  : .4rem;
+}

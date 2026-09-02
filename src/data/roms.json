@@ -1,0 +1,26 @@
+[
+    {
+        "slug"           : "jupiter-scope",
+        "title"          : "Jupiter Scope",
+        "cover_image"    :
+        {
+            "src"   : "jupiter-scope.png",
+            "alt"   : "a screenshot of the SNES game Jupiter Scope, from Super Action 52. It shows a space ship shooting a beam at a meteor in front of a night-time cityscape.",
+            "width" : 350,
+            "height": 260
+        },
+        "description"    : "a basic shooter game where you destroy meteors falling toward Earth",
+        "version"        : "0.1",
+        "order"          : 1,
+        "completion_date": "01/12/2026",
+        "genres"         : ["shoot 'em up", "action"],
+        "rom"            : 
+        {
+            "format"       : ".smc",
+            "filename"     : "00__JUPITER-SCOPE-v01.smc",
+            "size_bytes"   : 262144,
+            "download_path": null
+        },
+        "screenshots": []
+    }
+]
