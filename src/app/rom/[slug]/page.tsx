@@ -26,8 +26,6 @@ function format_bytes(bytes: number)
 
 export default async function ROM_page( { params } : ROM_page__props)
 {
-    /* need a back link */
-
     const { slug } = await params;
     const rom = get_ROM_by_slug(slug);
 

@@ -35,6 +35,12 @@ export default function HOME()
         <iframe className = "w-full h-full rounded-lg"
         src="https://www.youtube.com/embed/4nx-mF4-m6o?si=VdlAHwDOhl3Jw2TG" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
+
+      <h2>TOOLS</h2>
+      <p>
+        <Link href="/tools/gif-to-snes">GIF to SNES</Link>
+      </p>
+
     </main>
     </>
   );
