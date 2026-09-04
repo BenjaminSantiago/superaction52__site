@@ -12,8 +12,8 @@ export default function ROM_card({ rom }: ROM_card__props)
 {
     return(
         <article className = { styles.ROM_card }>
-            <p>
-                Game #{rom.order}
+            <p className = { styles.game_number } >
+                Game #{String(rom.order).padStart(2,"0")}
             </p>
 
             <h2>

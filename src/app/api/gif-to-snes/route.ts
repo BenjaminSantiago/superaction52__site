@@ -1,12 +1,5 @@
 export const runtime = "nodejs";
 
-export function GET()
-{
-    return Response.json(
-    {
-        message: "The GIF-to-SNES API route is alive!"
-    });
-}
 
 export async function POST(request: Request)
 {

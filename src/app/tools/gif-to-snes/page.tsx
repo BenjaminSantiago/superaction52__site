@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type SubmitEvent } from "react";
 import Link from "next/link";
 
 type status = 
@@ -17,7 +17,7 @@ export default function gif_to_snes__page()
 {
     const [ status, setStatus] = useState<status>({ kind: "idle"});
 
-    async function handle_submit(event: React.FormEvent<HTMLFormELement>)
+    async function handle_submit(event: SubmitEvent<HTMLFormElement>)
     {
         event.preventDefault();
 
@@ -28,7 +28,7 @@ export default function gif_to_snes__page()
         const response = await fetch("/api/gif-to-snes", 
         {
             method: "POST",
-            body: form_data, 
+            body  : form_data,
         });
 
         const data: api_response = await response.json();
@@ -44,31 +44,31 @@ export default function gif_to_snes__page()
             kind: "success",
             message:   `The server received ${ data.file_name } (${data.size} bytes).`,
         });
-        }
+    }
 
-        return (
-            <main>
-                <h1> GIF → SNES Graphics</h1>
+    return (
+        <main>
+            <h1> GIF → SNES Graphics</h1>
 
-                <Link href = "/">Back Home </Link>
-                <form onSubmit = {handle_submit}>
-                    <label htmlFor = "gif">Choose a static GIF</label>
-                    <input
-                        id     = "gif"
-                        name   = "gif"
-                        type   = "file"
-                        accept = "image/gif"
-                        required
-                    />
+            <Link href = "/">Back Home </Link>
+            <form onSubmit = {handle_submit}>
+                <label htmlFor = "gif">Choose a static GIF</label>
+                <input
+                    id     = "gif"
+                    name   = "gif"
+                    type   = "file"
+                    accept = "image/gif"
+                    required
+                />
 
-                    <button type = "submit" disabled={status.kind === "uploading"}>
-                        {status.kind === "uploading" ? "Checking GIF..." : "Send GIF" }
-                    </button>
-                </form>
+                <button type = "submit" disabled={status.kind === "uploading"}>
+                    {status.kind === "uploading" ? "Checking GIF..." : "Send GIF" }
+                </button>
+            </form>
 
-                {status.kind === "success" && <p>{ status.message }</p>}
-                {status.kind === "error" && <p role = "alert"> {status.message}</p>}
-            </main>
-        )
+            {status.kind === "success" && <p>{ status.message }</p>}
+            {status.kind === "error" && <p role = "alert"> {status.message}</p>}
+        </main>
+    )
 }
 
