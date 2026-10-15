@@ -2,7 +2,7 @@
 
 article.ROM_card
 {
-    @apply border-2 border-(--foreground) mx-auto w-[300px] rounded-[2%];
+    @apply border-2 border-(--foreground) mx-auto w-[300px] rounded-[2%] mb-4;
 }
 
 p.game_number
@@ -24,4 +24,9 @@ article.ROM_card h2
 .ROM_card li.genre
 {
     @apply  border-2 border-(--foreground) list-none my-[0.4rem] mx-[0.2rem] inline p-[0.4rem] rounded-[0.4rem];
+}
+
+.ROM_card p
+{
+    @apply px-2;
 }

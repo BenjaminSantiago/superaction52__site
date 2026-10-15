@@ -9,9 +9,10 @@
             "width" : 350,
             "height": 260
         },
-        "description"    : "a basic shooter game where you destroy meteors falling toward Earth",
+        "description"    : "A basic shooter game where you destroy meteors falling toward Earth. Based on the Action 52 game of the same name.",
         "version"        : "0.1",
         "order"          : 1,
+        "status"         : "playable",
         "completion_date": "01/12/2026",
         "genres"         : ["shoot 'em up", "action"],
         "rom"            : 
@@ -22,5 +23,81 @@
             "download_path": null
         },
         "screenshots": []
+    },
+    {
+        "slug"       : "tapatan",
+        "title"      : "TAPATAN",
+        "cover_image": 
+        {
+            "src"   : "cover__v00.png",
+            "alt"   : "A screenshot of an SNES game called Tapatan, it is a variant of tic-tac-toe several blue and pink game pieces are seen in a 3x3 grid. The game field is a pink speckled field. A cursor shows the current player's position. Text on the left side shows the current game mode and player.",
+            "width" : 350,
+            "height": 260
+        },
+        "description"    : "A tic-tac-toe variant, where you can only place three pieces at a time.",
+        "version"        : "0.0.1",
+        "order"          : 2,
+        "status"         : "in-progress",
+        "completion_date": null,
+        "genres"         : ["puzzle"],
+        "rom"            : 
+        {
+            "format"       : ".sfc",
+            "filename"     : "20260707__AM102714__DEBUG__TAPATAN-v01--------.sfc",
+            "size_bytes"   : 262144,
+            "download_path": null
+        },
+        "screenshots": []   
+    },
+    {
+        "slug"           : "micro-mike",
+        "title"          : "Micro Mike",
+        "cover_image"    : 
+        {
+            "src"   : "cover__v00.png",
+            "alt"   : "A screen shot of an in-progress SNES game called Micro Mike. It shows a small baby on a purple field.",
+            "width" : 350,
+            "height": 260      
+        },
+        "description"    : "Based on the game of the same name from Action 52. This version is meant to play like Flappy Bird",
+        "version"        : "0.0.1",
+        "order"          : 3,
+        "status"         : "in-progress",
+        "completion_date": null,
+        "genres"         : ["action", "arcade"],
+        "rom"            : 
+        {
+            "format"       : ".sfc",
+            "filename"     : "20260124__AM115111__DEBUG__MICRO-MIKE-v01------.sfc",
+            "size_bytes"   : 262144,
+            "download_path": null            
+        },
+        "screenshots"    : []
+    }, 
+    {
+        "slug"           : "spaeti",
+        "title"          : "SPÄTI",
+        "cover_image"    : 
+        {
+            "src"   : "cover__v00.png",
+            "alt"   : "A screenshot of an in-progress SNES game called SPÄTI. The screenshot shows an image of a white sign with the text 'FIELD CLOSED' in red. In-game text at the bottom of the screen says 'I used to take walks, sometimes as late as 3:00AM'",
+            "width" : 350,
+            "height": 260               
+        },
+        "description"    : "A text adventure game showing photographs from long walks. The title comes from a nickname for a Spätkauf (literally 'late purchase'), or store that is often open late in Germany. Roughly equivalent to a bodega. ",
+        "version"        : "0.0.1",
+        "order"          : 4,
+        "status"         : "in-progress",
+        "completion_date": null,
+        "genres"         : ["text adventure", "RPG"],
+        "rom"            : 
+        {
+            "format"       : ".sfc",
+            "filename"     : "20260728__PM035804__DEBUG__SPATI-v01-----------.sfc",
+            "size_bytes"   : 262144,
+            "download_path": null
+        },
+        "screenshots"    : []
+
     }
 ]

@@ -13,17 +13,18 @@ export default function HOME()
   return (
     <>
     <main>
-      <h1> SUPER ACTION 52</h1>
-      <p> 52 (small) Super Nintendo games, project updated every week! </p>
-
-      <p> 
-        <Link href = "https://benjaminsantiago.com">from Benjamin Santiago</Link>
-      </p> 
-      <p>
-          <Link href = "https://github.com/BenjaminSantiago/superaction52__games">
-            follow on github!
-          </Link>
-      </p>
+		<header>
+			<h1> SUPER ACTION 52</h1>
+				<p> 52 (small) Super Nintendo games, project updated every week! </p>
+				<p> 
+					<Link href = "https://benjaminsantiago.com">from Benjamin Santiago</Link>
+				</p> 
+				<p>
+					<Link href = "https://github.com/BenjaminSantiago/superaction52__games">
+						follow on github!
+					</Link>
+				</p>
+		</header>
 
       <section className = "columns">
         <section>
@@ -40,14 +41,18 @@ export default function HOME()
             <ROM_card key = {rom.slug} rom= {rom} />
           ))}
         </section>
-        {/* hide tools until it legit works.
+        
+        {/*
+
+        //don't show this for now, until things are a little more robust
+
         <section>
           <h2>TOOLS</h2>
             <p><Link href="/tools/gif-to-snes">GIF to SNES</Link></p>
             <p> A tool to convert a gif to SNES color and image format. This produces a .pic file with image data, and a .clr file with palette information.</p>
 
         </section>
-        */}
+        */} 
       </section>
     </main>
     </>

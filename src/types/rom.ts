@@ -30,6 +30,7 @@ export type ROM =
     description    : string;
     version        : string;
     order          : number;
+    status         : string;
     completion_date: string | null;
     genres         : string[];
     rom            : ROM_file;

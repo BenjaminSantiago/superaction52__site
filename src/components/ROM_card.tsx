@@ -22,15 +22,14 @@ export default function ROM_card({ rom }: ROM_card__props)
                 </Link>
             </h2>
             <Image 
-                         src    = {`/../ROMS/${ rom.slug }/${ rom.cover_image.src }`}
-                         alt    = {rom.cover_image.alt}
-                         width  = {rom.cover_image.width}
-                         height = {rom.cover_image.height}
-            />
-                <p><Link href   = {`../ROMS/${ rom.rom.filename }`}>download </Link></p>
-            <p> completed on: {rom.completion_date}</p>
-            <p>{rom.description}</p>
-
+                         src     = {`/../ROMS/${ rom.slug }/${ rom.cover_image.src }`}
+                         alt     = {rom.cover_image.alt}
+                         width   = {rom.cover_image.width}
+                         height  = {rom.cover_image.height}
+                         loading = "eager"
+            />                
+            <p>status → {rom.status}</p>
+            <p><Link href   = {`../ROMS/${ rom.rom.filename }`}>download </Link></p>
             <ul>
                 {rom.genres.map((genre)=> (
                     <li className = {styles.genre} key = {genre}>{genre}</li>
