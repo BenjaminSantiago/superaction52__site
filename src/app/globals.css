@@ -48,6 +48,7 @@ main section.columns section
 {
   @apply pl-8 pr-8 min-w-0 w-full
 }
+
 img
 {
   @apply mx-auto;
@@ -61,14 +62,15 @@ body
   @apply mx-auto py-8 tracking-widest;
 
 }
-h1, h2, p, ul, dt, dd
+
+h1, h2, h3, p, ul, dt, dd
 {
   @apply text-center;
 }
 
 ul 
 {
-  @apply list-disc list-inside;
+  @apply list-none;
 }
 
 h1 
@@ -79,6 +81,11 @@ h1
 h2
 {
   @apply text-2xl md:text-4xl pt-6;
+}
+
+h3
+{
+  @apply text-xl md:text-2xl pt-6;
 }
 
 a

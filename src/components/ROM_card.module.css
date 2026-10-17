@@ -10,7 +10,7 @@ p.game_number
     @apply border-b-2 border-(--foreground);
 }
 
-article.ROM_card h2
+article.ROM_card h3
 {
     @apply p-0;
 }

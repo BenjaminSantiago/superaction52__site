@@ -16,11 +16,11 @@ export default function ROM_card({ rom }: ROM_card__props)
                 Game #{String(rom.order).padStart(2,"0")}
             </p>
 
-            <h2>
+            <h3>
                 <Link href = {`../rom/${ rom.slug }`}>
                     {rom.title} { rom.version }
                 </Link>
-            </h2>
+            </h3>
             <Image 
                          src     = {`/../ROMS/${ rom.slug }/${ rom.cover_image.src }`}
                          alt     = {rom.cover_image.alt}

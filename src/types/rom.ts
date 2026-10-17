@@ -28,6 +28,7 @@ export type ROM =
     title          : string;
     cover_image    : cover_image;
     description    : string;
+    language       : string;
     version        : string;
     order          : number;
     status         : string;
