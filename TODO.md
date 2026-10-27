@@ -1,6 +1,12 @@
 - (DONE, 10/16/2026) home page has two columns if the page is wide enough (for ROM cards)
 - (DONE, 10/17/2026) add in the emulator.js
 
+- neeed like an "about page" with some information about Action 52
+    - page with info other multi-carts
+        - Maxi-vision
+        [] is there like a directory of this ? 
+
+- games include sketches/drawing....or can have updates "attached" to them. 
 - emulatorJS
     - styling "start button"
     - styling/customizing the buttons

@@ -63,7 +63,7 @@ export default async function HOME()
                             follow on github!
                         </Link>
                     </li >
-
+                    {/* 
                     <li className = "border-2 rounded-[0.4rem] px-2 py-1">
                         follow on itch.io!
                     </li>
@@ -71,6 +71,7 @@ export default async function HOME()
                     <li className = "border-2 rounded-[0.4rem] px-2 py-1">
                         follow on instagram!
                     </li>
+                    */}
                 </ul>
 		</header>
 
@@ -83,6 +84,7 @@ export default async function HOME()
             className = "w-full aspect-4/3 items-center mx-auto h-[480px]"
             allowFullScreen
             />
+            <p>Controls → X → Fire, left & right → move </p>
             <p>in-browser emulation provided by <Link href = "https://emulatorjs.org/">emulatorJS</Link> and uses the <Link href = "https://bsnes.org/">bsnes</Link> core</p>
         </section>
 
@@ -91,6 +93,7 @@ export default async function HOME()
             <h2>UPDATES</h2>
             {videos.map((video)=>
                 {
+                    // format date from YouTube (this includes the time as well)
                     const formatted_date = new Date(video.contentDetails.videoPublishedAt)
                     .toLocaleDateString("en-US", 
                     {
@@ -99,11 +102,11 @@ export default async function HOME()
                         year    : "numeric",
                         timeZone: "UTC"
                     });
-            
+                    
                     return(
                         <div key = {video.id} className = "w-full aspect-video">
                             <Link href = {`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}><h3>{video.snippet.title}</h3></Link>
-                            <p>{formatted_date}</p>
+                            <p>posted on → {formatted_date}</p>
                             <iframe className = "w-full h-full rounded-lg"
                             src={`https://www.youtube.com/embed/${video.snippet.resourceId.videoId}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div> 
@@ -117,12 +120,14 @@ export default async function HOME()
           <h2> GAMES </h2>
           {/* selector for display type */}
           <div>
+            {/*
             <ul className = "flex flex-row gap-1 max-w-fit mx-auto">
               <li> list | </li>
               <li> cards (compact) | </li>
               <li> cards (normal) |</li>
               <li> cards (verbose) </li> 
             </ul>
+            */}
           </div>
           {/* container for ROM cards*/}
           <div className = "grid grid-cols-1 md:grid-cols-2 gap-1"> 
